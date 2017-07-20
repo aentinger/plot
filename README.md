@@ -1,7 +1,7 @@
-libplot
-=======
+libplot ...
+===========
 
-C++ 2D/3D plotting library based on gnuplot
+... is a C++ 2D/3D plotting library based on gnuplot.
 
 ## Build
 
@@ -10,12 +10,12 @@ C++ 2D/3D plotting library based on gnuplot
 sudo apt-get install gnuplot cmake libboost-all-dev
 ```
 
-* Clone project
+* Clone repository
 ```
 git clone https://github.com/lxrobotics/plot.git
 ```
 
-* Build with cmake
+* Build
 ```
 cd plot
 cmake .
