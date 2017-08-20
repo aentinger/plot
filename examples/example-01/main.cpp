@@ -12,8 +12,8 @@
 
 #include <iostream>
 
-#include "Plot2D.h"
-#include "Plot3D.h"
+#include <plot/Plot2D.h>
+#include <plot/Plot3D.h>
 
 /**************************************************************************************
  * MAIN
@@ -63,5 +63,5 @@ int main(int argc, char **argv)
     Plot3D plot_3d("Plot3D Demo", "Plot3D Demo Title", "x label", "y label", "z label", "", "", "", data);
   }
 
-	return EXIT_SUCCESS;
+  return EXIT_SUCCESS;
 }
