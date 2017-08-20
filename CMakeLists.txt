@@ -18,6 +18,7 @@ set(PLOT_LIBRARY_NAME ${PROJECT_NAME})
 ##########################################################################
 
 include_directories(include)
+include_directories(shared/gnuplot-iostream/include)
 
 ##########################################################################
 
