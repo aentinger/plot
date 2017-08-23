@@ -74,9 +74,9 @@ void Plot2D::plot(SingleGraphData const & data)
 {
   _gp << "plot "
       << _gp.file1d(convertToGnuplotDataVect(data.data_point_vect()))
-      << "with "      << data.line_type()
-      << " pointtype" << data.point_type()
-      << " title '" << data.title() << "'"
+      << "with "        << data.line_type()
+      << " pointtype "  << data.point_type()
+      << " title '"     << data.title() << "'"
       << std::endl;
 }
 

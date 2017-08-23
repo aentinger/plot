@@ -77,9 +77,9 @@ void Plot3D::plot(SingleGraphData const & data)
 {
   _gp << "splot "
       << _gp.file1d(convertToGnuplotDataVect(data.data_point_vect()), "record")
-      << "with "      << data.line_type()
-      << " pointtype" << data.point_type()
-      << " title '"   << data.title() << "'"
+      << "with "        << data.line_type()
+      << " pointtype "  << data.point_type()
+      << " title '"     << data.title() << "'"
       << std::endl;
 }
 
