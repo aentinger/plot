@@ -35,7 +35,7 @@ int main(int argc, char **argv)
       data_point_vect.push_back(data_point);
     }
 
-    Plot2D::SingleGraphData const data("y = cos(x)", "linespoints", data_point_vect);
+    Plot2D::SingleGraphData const data("y = cos(x)", "linespoints", "1", data_point_vect);
 
     Plot2D plot_2d("Plot2D Demo", "Plot2D Demo Title", "x label", "y label", "", "", data);
   }
@@ -58,7 +58,7 @@ int main(int argc, char **argv)
       data_point_vect.push_back(data_point);
     }
 
-    Plot3D::SingleGraphData const data("f(x) = IQ(x)", "linespoints", data_point_vect);
+    Plot3D::SingleGraphData const data("f(x) = IQ(x)", "linespoints", "0", data_point_vect);
 
     Plot3D plot_3d("Plot3D Demo", "Plot3D Demo Title", "x label", "y label", "z label", "", "", "", data);
   }

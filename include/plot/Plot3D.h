@@ -63,15 +63,17 @@ public:
   {
   public:
 
-    SingleGraphData(std::string const & title, std::string const & point_type, DataPointVect const & data_point_vect);
+    SingleGraphData(std::string const & title, std::string const & line_type, std::string const & point_type, DataPointVect const & data_point_vect);
 
     inline std::string    title           () const { return this->_title;           }
+    inline std::string    line_type       () const { return this->_line_type;       }
     inline std::string    point_type      () const { return this->_point_type;      }
     inline DataPointVect  data_point_vect () const { return this->_data_point_vect; }
 
   private:
 
     std::string   _title;
+    std::string   _line_type;
     std::string   _point_type;
     DataPointVect _data_point_vect;
 

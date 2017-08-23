@@ -36,10 +36,11 @@ Plot2D::DataPoint::DataPoint(double const x, double const y)
  * Plot2D::SingleGraphData
  **************************************************************************************/
 
-Plot2D::SingleGraphData::SingleGraphData(std::string const & title, std::string const & point_type, DataPointVect const & data_point_vect)
+Plot2D::SingleGraphData::SingleGraphData(std::string const & title, std::string const & line_type, std::string const & point_type, DataPointVect const & data_point_vect)
 {
-  this->_title = title;
-  this->_point_type = point_type;
+  this->_title           = title;
+  this->_line_type       = line_type;
+  this->_point_type      = point_type;
   this->_data_point_vect = data_point_vect;
 }
 
@@ -73,7 +74,8 @@ void Plot2D::plot(SingleGraphData const & data)
 {
   _gp << "plot "
       << _gp.file1d(convertToGnuplotDataVect(data.data_point_vect()))
-      << "with "    << data.point_type()
+      << "with "      << data.line_type()
+      << " pointtype" << data.point_type()
       << " title '" << data.title() << "'"
       << std::endl;
 }
